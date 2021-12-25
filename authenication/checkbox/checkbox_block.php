@@ -11,8 +11,8 @@
     $result_array = mysqli_fetch_array($result);
     $id_this_login = $result_array['id'];
     if ($id_this_login == $k){
-        header('Location: authentication.html');
+        header('Location: ../../authentication.html');
     }else {
-        header('Location: table.php');
+        header('Location: ../table.php');
     };
 ?>

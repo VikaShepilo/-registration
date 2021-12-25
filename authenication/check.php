@@ -1,6 +1,6 @@
 <?php
     if (empty($_POST['login']) || empty($_POST['password'])) {
-        header('Location: authentication.html'); 
+        header('Location: ../authentication.html'); 
     } else {
         $connect = mysqli_connect('localhost','root','123','my');
         $login = $_POST['login'];
@@ -22,10 +22,10 @@
                 mysqli_query($connect, $sql_update); 
                 header('Location: table.php');
             }else {
-                header('Location: authentication.html');
+                header('Location: ../authentication.html');
             }
         }else{
-            header('Location: authentication.html');
+            header('Location: ../authentication.html');
         }
     };    
 ?>

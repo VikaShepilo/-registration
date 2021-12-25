@@ -1,5 +1,5 @@
 <?php 
-    reduire_once 'check.php';
+    reduire_once 'authenication/check.php';
 ?>
 <!doctype html>
 <html lang="en">
@@ -11,7 +11,7 @@
         <title>Authentication</title>
     </head>
     <body>
-        <form action="check.php" method="post" class="form-registration">
+        <form action="authenication/check.php" method="post" class="form-registration">
             <p>Authentication</p>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Login</label>
@@ -23,7 +23,7 @@
             </div>
             <button type="submit" class="btn btn-primary">Authentication</button>
             <span>
-                Don't have an account? - <a href="/index.html">Registration</a>
+                Don't have an account? - <a href="index.html">Registration</a>
             </span>
         </form>
     </body>
