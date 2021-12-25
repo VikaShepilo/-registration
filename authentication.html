@@ -1,0 +1,30 @@
+<?php 
+    reduire_once 'check.php';
+?>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Authentication</title>
+    </head>
+    <body>
+        <form action="check.php" method="post" class="form-registration">
+            <p>Authentication</p>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Login</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Enter login" name="login"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter password" name="password">
+            </div>
+            <button type="submit" class="btn btn-primary">Authentication</button>
+            <span>
+                Don't have an account? - <a href="/index.html">Registration</a>
+            </span>
+        </form>
+    </body>
+</html>

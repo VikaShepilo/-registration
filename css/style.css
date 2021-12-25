@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-registration {
+    max-width: 30%;
+    margin: 5rem auto;
+}
+.table_btn {
+    display: flex;
+    align-items: center;
+}
